@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import MailboxForm from './components/MailboxForm';
 import MailboxList from './components/MailboxList';
 import MailboxDetails from './components/MailboxDetails';
+import ModeSwitcher from './ModeSwitcher';
 import './App.css';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <>
       <NavBar />
+      <ModeSwitcher/> 
       <Routes>
         <Route path="/" element={<main><h1>Post Office</h1></main>} />
         <Route

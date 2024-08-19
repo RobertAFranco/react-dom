@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .light {
+    color: rgb(35, 35, 35);
+    background-color: #FFFDD0;
+  }
+  
+  .dark {
+    background-color: rgb(35, 35, 35);
+    color: #FFFDD0;
+  }
+  
+  .neon {
+    background-color: #0f0f0f;
+    color: #39ff14;
+    text-shadow: 0 0 5px #FF1493, 0 0 10px #FF1493, 0 0 20px #FF1493;
+  }
+  
+  .night {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+  }
+  
+  .mode-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .mode-switcher button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .mode-switcher button:hover {
+    opacity: 0.8;
+  }
+  
+  .light .mode-switcher button {
+    background-color: #ddd;
+    color: #000;
+  }
+  
+  .dark .mode-switcher button {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .neon .mode-switcher button {
+    background-color: #000;
+    color: #39ff14;
+  }
+  
+  .night .mode-switcher button {
+    background-color: #34495e;
+    color: #ecf0f1;
+  }

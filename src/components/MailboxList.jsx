@@ -5,7 +5,9 @@ const MailboxList = ({ mailboxes }) => {
     <div>
       {mailboxes.map((mailbox) => (
         <div key={mailbox._id} className="mail-box">
-          <Link to={`/mailboxes/${mailbox._id}`}>Box #{mailbox._id}</Link>
+          <Link to={`/mailboxes/${mailbox._id}`}>
+            {`Mailbox #${mailbox._id}: ${mailbox.boxholder}`}
+          </Link>
         </div>
       ))}
     </div>
@@ -13,3 +15,5 @@ const MailboxList = ({ mailboxes }) => {
 };
 
 export default MailboxList;
+
+
